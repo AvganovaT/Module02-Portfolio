@@ -10,15 +10,11 @@ $red: #d40000;
 $red_hover: #eA0e00;
 $white: #fff;
 
-$r_minmob: 320px;
-$r_mob_360: 360px;
 $r_mob_400: 400px;
 $r_mob_500: 500px;
 $r_tab: 768px;
 $r_tab_900: 900px;
-$r_desk: 1000px;
 $r_desk_1120: 1120px;
-$r_desk_hd: 1200px;
 
 html {
     font-size: 10px;
@@ -88,11 +84,17 @@ body {
         margin: 0;
         padding-left: 0;
         gap: 2.85rem;
+        @media (max-width: $r_mob_400) {
+            gap: 1.5rem;
+        }
     }
     &__link {
         text-decoration: none;
         color: $grey;
         transition: .2s;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.25rem;
+        }
         &:hover {
             color: $red;
         }
@@ -106,6 +108,12 @@ body {
     &__logo {
         width: 100%;
         height: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        @media (max-width: $r_tab) {
+            height: 27rem;
+        }
     }
     &__name {
         display: block;
@@ -135,6 +143,9 @@ body {
                 border-left: 2rem solid transparent;
                 border-right: 2rem solid transparent;
                 top: 13.5rem;
+            }
+            @media (max-width: $r_mob_400) {
+                font-size: 2.25rem;
             }
         }
     }
@@ -188,6 +199,9 @@ body {
         color: $grey;
         transition: .2s;
         position: relative;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;   
+        }
         &::before {
             display: none;
             content: '';
@@ -223,6 +237,9 @@ body {
         justify-content: space-between;
         align-items: center;
         gap: 5.6rem;
+        @media (max-width: $r_mob_400) {
+            gap: 1.5rem;
+        }
     }
     &__link {
         text-decoration: none;
@@ -238,6 +255,10 @@ body {
             height: 24px;
             position: absolute;
             left: -26px;
+            @media (max-width: $r_mob_400) {
+                height: 15px;
+                left: -5px;
+            }
         }
         &:nth-child(1)::before {
             display: none;
@@ -258,6 +279,12 @@ body {
             top: -4.2rem;
             left: -7.85rem;
             z-index: -1;
+            @media (max-width: $r_mob_400) {
+                width: 7.5rem;
+                height: 7.5rem;
+                top: -3.2rem;
+                left: -4.2rem;
+            }
         }
     }
 }
@@ -269,6 +296,9 @@ body {
     gap: 2rem;
     border-top: 2px solid $grey;
     margin-top: 6rem;
+    @media (max-width: $r_mob_400) {
+        gap: 0;           
+    }
     @media (max-width: $r_tab_900) {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -284,11 +314,17 @@ body {
         line-height: 1.5;
         text-transform: uppercase;
         margin-bottom: 1.5rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;       
+        }
     }
     &__text {
         font-size: 1.4rem;
         color: rgba($grey, .8);
         line-height: 1.5;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.25rem;       
+        }
     }
 }
 
@@ -326,6 +362,9 @@ body {
 
 .about {
     margin-top: 17.5rem;
+    @media (max-width: $r_mob_400) {
+        margin-top: 10rem;
+    }
     &__flex {
         display: flex;
         justify-content: space-between;
@@ -341,12 +380,18 @@ body {
         line-height: 1.5;
         text-transform: uppercase;
         margin-top: 2.7rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;
+        }
     }
     &__text {
         max-width: 56rem;
         color: rgba($grey, .8);
         font-size: 2.8rem;
         line-height: 1.5;
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -361,6 +406,9 @@ body {
     @media (max-width: $r_desk_1120) {
         padding-left: 0;
     }
+    @media (max-width: $r_mob_400) {
+        gap: 1rem;
+    }
     &__item {
         max-width: 27rem;
     }
@@ -368,11 +416,18 @@ body {
         font-size: 1.6rem;
         font-weight: 700;
         line-height: 1.5;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;
+        }
     }
     &__text {
         color: rgba($grey, .8);
         font-size: 1.4rem;
         line-height: 1.5;
+        @media (max-width: $r_mob_400) {
+            max-width: 19rem;
+            font-size: 1.25rem;
+        }
     }
 }
 
@@ -380,6 +435,9 @@ body {
 
 .steps {
     margin-top: 16.4rem;
+    @media (max-width: $r_mob_400) {
+        margin-top: 7.5rem;
+    }
     &__item {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -398,9 +456,16 @@ body {
         font-weight: 400;
         span {
             padding-right: 4rem;
+            @media (max-width: $r_mob_400) {
+                padding-right: 1.5rem;
+            }
         }
         @media (max-width: $r_tab) {
             max-width: 29rem;
+        }
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;
+            max-width: 21rem;
         }
     }
     &__text {
@@ -409,6 +474,9 @@ body {
         line-height: 1.5;
         @media (max-width: $r_tab) {
             max-width: 29rem;
+        }
+        @media (max-width: $r_mob_400) {
+            max-width: 19rem;
         }
     }
 }
@@ -474,11 +542,17 @@ body {
         @media (max-width: $r_tab_900) {
             display: block;
         }
+        @media (max-width: $r_mob_400) {
+            padding-bottom: 0;
+        }
     }
     &__name {
         font-size: 2.8rem;
         font-weight: 700;
         line-height: 1.5;
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;
+        }
     }
     &__list {
         list-style-type: none;
@@ -489,12 +563,18 @@ body {
         font-size: 1.6rem;
         line-height: 1.5;
         padding-top: 1rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;
+        }
     }
     &__time {
         font-size: 1.6rem;
         font-weight: 700;
         line-height: 1.5;
         margin-top: 4rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;
+        }
     }
     &__link {
         display: block;
@@ -503,6 +583,9 @@ body {
         @media (max-width: $r_tab) {
             max-width: 500px;
             width: 100%;
+        }
+        @media (max-width: $r_mob_400) {
+            max-width: 360px;
         }
     }
     &__hf {
@@ -522,10 +605,16 @@ body {
         max-width: 87rem;
         margin-top: 18rem;
         margin-bottom: 8rem;
+        @media (max-width: $r_mob_400) {
+            margin-top: 10rem;
+        }
     }
     &__else_text {
         font-size: 2.8rem;
         line-height: 1.5;
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -558,12 +647,20 @@ body {
         font-size: 1.6rem;
         font-weight: 600;
         margin-bottom: 0;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;
+        }
     }
     &__text {
         font-size: 1.4rem;
         line-height: 1.5;
         color: rgba($grey, .8);
         margin-top: 0.6rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;
+            max-width: 35.2rem;
+            margin-top: 1.5rem;
+        }
     }
 }
 
@@ -572,6 +669,9 @@ body {
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
     margin-top: 16.5rem;
+    @media (max-width: $r_mob_400) {
+        margin-top: 7.5rem;
+    }
     &__item {
         display: flex;
         justify-content: center;
@@ -581,6 +681,9 @@ body {
         border: 1px solid rgba($grey, .5);
         cursor: pointer;
         transition: .2s;
+        @media (max-width: $r_mob_400) {
+            height: 5.8rem;
+        }
         &:hover {
             .portfolio-icons__text {
                 visibility: visible;
@@ -618,17 +721,29 @@ body {
         @media (max-width: $r_mob_500) {
             width: 14.5rem;
         }
+        @media (max-width: $r_mob_400) {
+            width: 11rem;
+            padding: 1rem;
+            font-size: .9rem;
+            left: -6rem;
+        }
     }
     &__tphp {
         left: -6.2rem;
         @media (max-width: $r_tab) {
             left: -5.2rem;
         }
+        @media (max-width: $r_mob_400) {
+            left: -4.5rem;
+        }
     }
     &__tvue {
         left: -7.5rem;
         @media (max-width: $r_tab) {
             left: -6.5rem;
+        }
+        @media (max-width: $r_mob_400) {
+            left: -5rem;
         }
     }
     &__title {
@@ -656,6 +771,10 @@ body {
             width: 4.785rem;
             height: 6.4rem;
         }
+        @media (max-width: $r_mob_400) {
+            width: 2.5rem;
+            height: 3.1rem;
+        }
     }
     &__css {
         width: 6.718rem;
@@ -663,6 +782,10 @@ body {
         @media (max-width: $r_tab) {
             width: 4.718rem;
             height: 6.19rem;
+        }
+        @media (max-width: $r_mob_400) {
+            width: 2.5rem;
+            height: 3rem;
         }
     }
     &__js {
@@ -672,6 +795,10 @@ body {
             width: 5.113rem;
             height: 5.689rem;
         }
+        @media (max-width: $r_mob_400) {
+            width: 2.675rem;
+            height: 2.85rem;
+        }
     }
     &__jquery {
         width: 7.577rem;
@@ -679,6 +806,10 @@ body {
         @media (max-width: $r_tab) {
             width: 5.577rem;
             height: 6.19rem;
+        }
+        @media (max-width: $r_mob_400) {
+            width: 2.8rem;
+            height: 2.9rem;
         }
     }
     &__bootstrap {
@@ -688,6 +819,10 @@ body {
             width: 5.1rem;
             height: 5.1rem;
         }
+        @media (max-width: $r_mob_400) {
+            width: 2.67rem;
+            height: 2.6rem;
+        }
     }
     &__php {
         width: 10.5rem;
@@ -695,6 +830,10 @@ body {
         @media (max-width: $r_tab) {
             width: 8.5rem;
             height: 3.484rem;
+        }
+        @media (max-width: $r_mob_400) {
+            width: 3.94rem;
+            height: 2rem;
         }
     }
     &__vue {
@@ -704,6 +843,10 @@ body {
             width: 6.1rem;
             height: 5rem;
         }
+        @media (max-width: $r_mob_400) {
+            width: 3rem;
+            height: 2.6rem;
+        }
     }
     &__wordpress {
         width: 7.4rem;
@@ -711,6 +854,10 @@ body {
         @media (max-width: $r_tab) {
             width: 5.4rem;
             height: 5.4rem;
+        }
+        @media (max-width: $r_mob_400) {
+            width: 2.8rem;
+            height: 2.75rem;
         }
     }
 }
@@ -745,6 +892,9 @@ body {
             left: -6.85rem;
             z-index: -1;
         }
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;
+        }
     }
     &__text {
         max-width: 56rem;
@@ -752,6 +902,9 @@ body {
         font-size: 2.8rem;
         line-height: 1.5;
         margin-top: 2rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 2rem;   
+        }
     }
 }
 
@@ -762,6 +915,9 @@ body {
     border-top: 2px solid #f3f2f0;
     padding-top: 3.5rem;
     margin-top: 4.8rem;
+    @media (max-width: $r_mob_400) {
+        gap: 1rem;       
+    }
     &__2 {
         margin-top: 1.5rem;
     }
@@ -776,6 +932,9 @@ body {
         line-height: 1.5;
         margin-bottom: 0;
         font-weight: 400;
+        @media (max-width: $r_mob_500) {
+            font-size: 2rem;
+        }
     }
     &__text {
         font-size: 1.6rem;
@@ -784,6 +943,9 @@ body {
         color: rgba($grey, .8);
         margin-top: 2rem;
         margin-bottom: 7.5rem;
+        @media (max-width: $r_mob_400) {
+            max-width: 18rem;       
+        }
     }
     &__subtitle {
         font-size: 1.6rem;
@@ -797,6 +959,9 @@ body {
         color: rgba($grey, .8);
         margin-top: 1.8rem;
         padding-left: 2rem;
+        @media (max-width: $r_mob_400) {
+            font-size: 1.5rem;   
+        }
     }
     &__cost {
         font-size: 4.2rem;
@@ -814,6 +979,15 @@ body {
             top: -1.2rem;
             left: -4.4rem;
             z-index: -1;
+            @media (max-width: $r_mob_400) {
+                width: 5rem;
+                height: 5rem;
+                top: -0.5rem;
+                left: -2.5rem;
+            }
+        }
+        @media (max-width: $r_mob_500) {
+            font-size: 2.75rem;
         }
     }
     &__none {
@@ -849,6 +1023,7 @@ body {
         @media (max-width: $r_tab_900) {
             order: 2;
             margin-top: 6rem;
+            justify-content: center;
         }
     }
     &__title {
@@ -859,6 +1034,10 @@ body {
         line-height: 1.5;
         text-transform: uppercase;
         position: relative;
+        @media (max-width: $r_mob_400) {
+            max-width: 25rem;
+            font-size: 2rem;
+        }
         &::before {
             content: '';
             width: 30rem;
@@ -873,6 +1052,10 @@ body {
                 top: -8rem;
                 left: -7rem;
             }
+            @media (max-width: $r_mob_400) {
+                width: 25rem;
+                height: 25rem;
+            }
         }
         &::after{
             content: '';
@@ -886,6 +1069,13 @@ body {
                 top: -9rem;
                 left: 14.2rem;
             }
+            @media (max-width: $r_mob_400) {
+                top: -7rem;
+                left: 12.2rem;
+                border-bottom: 4.5rem solid $white;
+                border-left: 2.4rem solid transparent;
+                border-right: 2.4rem solid transparent;
+            }
         }
     }
     &__text {
@@ -894,6 +1084,10 @@ body {
         font-size: 2.8rem;
         line-height: 1.5;
         margin-top: 2rem;
+        @media (max-width: $r_mob_400) {
+            max-width: 40rem;
+            font-size: 2rem;   
+        }
     }
 }
 
@@ -915,8 +1109,8 @@ body {
         border: none;
         outline: none;
         @media (max-width: $r_mob_400) {
-            max-width: 46rem;
-            padding: 2.4rem 26.8rem 2.3rem 2rem;
+            max-width: 45rem;
+            padding: 2.4rem 24.8rem 2.3rem 2rem;
         }
     }
     &__btn {
@@ -936,7 +1130,7 @@ body {
             background-color: $red_hover;
         }
         @media (max-width: $r_mob_400) {
-            max-width: 46rem;
+            max-width: 44.5rem;
             padding: 2.4rem 18.5rem 2.3rem;
         }
     }
@@ -995,15 +1189,19 @@ body {
             bottom: 2rem;
         }
         @media (max-width: $r_mob_400) {
-            max-width: 45rem;
-            padding: 2.4rem 43.7rem 2.3rem 2rem;
+            max-width: 44.5rem;
+            padding: 2.4rem 8rem 2.3rem 2rem;
         }
     }
 
     .modal__control {
         @media (max-width: $r_tab) {
-            max-width: 45rem;
-            padding: 2.4rem 24.8rem 2.3rem 2rem;
+            max-width: 42rem;
+            padding: 2.4rem 41rem 2.3rem 2rem;
+        }
+        @media (max-width: $r_mob_400) {
+            max-width: 40rem;
+            padding: 2.4rem 39rem 2.3rem 2rem;
         }
     }
     
@@ -1032,9 +1230,6 @@ body {
                     }          
                 }
             }
-        }
-        @media (max-width: $r_mob_400) {
-            width: 99.5%;
         }
     }
     
@@ -1134,10 +1329,18 @@ body {
         max-height: 63rem; 
         padding: 5.5rem 2rem 6rem;
     }
+    @media (max-width: $r_mob_400) {
+        max-width: 43rem;
+        padding: 3.5rem 1rem 3rem;
+    }
     &__btn {
         @media (max-width: $r_tab) {
             max-width: 45rem;
             padding: 2.4rem 17.1rem 2.3rem;
+        }
+        @media (max-width: $r_mob_400) {
+            max-width: 43rem;
+            padding: 2.4rem 16.1rem 2.3rem;
         }
     }
     &__input {
@@ -1145,11 +1348,17 @@ body {
             max-width: 45rem;
             padding: 2.4rem 23.3rem 2.3rem 2rem;
         }
+        @media (max-width: $r_mob_400) {
+            padding: 2.4rem 21.3rem 2.3rem 2rem;
+        }
     }
     &__flex {
         text-align: center;
         max-width: 40rem;
         margin: 0 auto;
+        @media (max-width: $r_mob_400) {
+            max-width: 27rem;
+        }
     }
     &__title {
         font-size: 2.2rem;
@@ -1223,6 +1432,22 @@ body {
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        @media (max-width: $r_mob_400) {
+            margin-top: 6.5rem;
+            gap: 4.5rem;
+        }
+        .contacts__link {
+            @media (max-width: $r_mob_400) {
+                font-size: 2rem;
+            }
+        }
+        .contacts__mail {
+            &::before {
+                @media (max-width: $r_mob_400) {
+                left: -16px;
+                }
+            }
+        }
     }
     &__social {
         display: flex;
@@ -1231,18 +1456,28 @@ body {
     }
     &__item {
         border-top: 2px solid rgba($grey, .2);
-        padding-top: 1rem;
-        margin-top: 1rem;
+        padding-top: 4rem;
+        margin-top: 3.5rem;
+        @media (max-width: $r_mob_400) {
+            padding-top: 3rem;
+            margin-top: 2.5rem;
+        }
         &:nth-child(5) {
             border-bottom: 2px solid rgba($grey, .2);
             padding-bottom: 1rem;
+            @media (max-width: $r_mob_400) {
+                padding-bottom: 2.5rem;
+            }
         }
     }
     &__link {
-        font-size: 2.6rem;
+        font-size: 4rem;
         line-height: 1.5;
         text-decoration: none;
         color: $grey;
+        @media (max-width: $r_mob_400) {
+            font-size: 3.7rem;
+        }
     }
     &__close {
         width: 2rem;
