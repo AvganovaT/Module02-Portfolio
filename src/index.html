@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+</head>
+<body>
+
+    <!-- MAIN -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__flex">
+                <nav class="header__navigation">
+                    <ul class="header__nav">
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Обо мне</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Этапы работ</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Цены</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Обратная связь</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contacts">
+                    <a class="contacts__link" href="tel:+79531928624">+7 953 192 86 24</a>
+                    <a class="contacts__link contacts__mail" href="mailto:avganovat@gmail.com">avganovat@gmail.com</a>
+                </div>
+                <div class="header__burger">
+                    <a class="contacts__link" href="tel:+79531928624">+7 953 192 86 24</a>
+                    <button class="burger" onclick="openBurger()"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <img class="main__logo" src="./images/logo.png" alt="">
+            <h1 class="main__title">
+                <span class="main__name">Таманно Авганова</span>
+                web-разработчик
+            </h1>
+            <div class="main__callback">
+                <a class="main__popup" href="#modal_bg" onclick="openModal()">Обсудить проект</a>
+                <div class="main__social">
+                    <a class="main__link main__vk" href="#/">Vk</a>
+                    <a class="main__link main__tg" href="https://t.me/TomaAvganova" target="_blank">Telegram</a>
+                    <a class="main__link main__gh" href="https://github.com/AvganovaT" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="main-grid">
+                <div class="main-grid__item">
+                    <h4 class="main-grid__title">FRONT-END</h4>
+                    <p class="main-grid__text">HTML+CSS+JS кодирование дизайнов любой сложности</p>
+                </div>
+                <div class="main-grid__item">
+                    <h4 class="main-grid__title">Back-end</h4>
+                    <p class="main-grid__text">Разработка сложной back-end логики для готового front-end</p>
+                </div>
+                <div class="main-grid__item">
+                    <h4 class="main-grid__title">WORDPRESS</h4>
+                    <p class="main-grid__text">Разработка сайтов - от блога до&nbsp;интернет магазина</p>
+                </div>
+                <div class="main-grid__item">
+                    <h4 class="main-grid__title">SEO продвижение</h4>
+                    <p class="main-grid__text">Качественное улучшение&nbsp;позиций сайта в поисковой выдаче</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+
+    <section class="about">
+        <div class="container">
+            <div class="about__flex">
+                <h1 class="about__title">Обо мне</h1>
+                <p class="about__text">Создаю только эффективные решения, которые работают на результат: от&nbsp;одностраничных сайтов, до крупных интернет-порталов.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-grid__item">
+                    <h4 class="about-grid__title">Контроль</h4>
+                    <p class="about-grid__text">Предоставление результатов на&nbsp;каждом этапе работы с&nbsp;возможностью внести правки</p>
+                </div>
+                <div class="about-grid__item">
+                    <h4 class="about-grid__title">Ответственность</h4>
+                    <p class="about-grid__text">Фриланс как основная деятельность, что означает полную отдачу в&nbsp;процессе работы над заказом</p>
+                </div>
+                <div class="about-grid__item">
+                    <h4 class="about-grid__title">Исполнительность</h4>
+                    <p class="about-grid__text">Внимательность ко всем требованиям&nbsp;заказчика и&nbsp;прояснение&nbsp;любых моментов</p>
+                </div>
+                <div class="about-grid__item">
+                    <h4 class="about-grid__title">Качество</h4>
+                    <p class="about-grid__text">Высокое качество как графических материалов, так и внутренних алгоритмов работы сайта</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEPS -->
+
+    <section class="steps">
+        <div class="container">
+            <div class="steps__item">
+                <h3 class="steps__title"><span>01</span>Вы заказываете сайт</h3>
+                <p class="steps__text">Связываетесь со мной по телефону или через заявку на сайте</p>
+            </div>
+            <div class="steps__item">
+                <h3 class="steps__title"><span>02</span>Обговариваем детали</h3>
+                <p class="steps__text">Созваниваемся или списываемся любым удобным для вас способом</p>
+            </div>
+            <div class="steps__item">
+                <h3 class="steps__title"><span>03</span>Этап программирования</h3>
+                <p class="steps__text">Верстаю сайт по вашему проекту пиксель в пиксель</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+
+    <section class="portfolio">
+        <div class="container">
+            <h1 class="portfolio__title">Портфолио</h1>
+        </div>
+        <div class="portfolio__bg">
+            <div class="container">
+                <div>
+                    <div class="portfolio__flex">
+                        <div class="portfolio__item">
+                            <h2 class="portfolio__name">Healthy food</h2>
+                            <ul class="portfolio__list">
+                                <li class="portfolio__text">– верстка по макету из PSD</li>
+                                <li class="portfolio__text">- добавлена адаптивность под любой тип устройтв</li>
+                                <li class="portfolio__text">- реализована кнопка «Перейти в каталог»</li>
+                            </ul>
+                            <p class="portfolio__time">Затрачено времени: 7 рабочих дней</p>
+                        </div>
+                        <a class="portfolio__link portfolio__hf" href="https://avganovat.github.io/Module02-Shop/dist/" target="_blank"></a>
+                    </div>
+                    <div class="portfolio__flex">
+                        <div class="portfolio__item">
+                            <h2 class="portfolio__name">Gym</h2>
+                            <ul class="portfolio__list">
+                                <li class="portfolio__text">- верстка по макету из Figma</li>
+                                <li class="portfolio__text">- наполнение сайта контентом</li>
+                                <li class="portfolio__text">- добавлена анимация</li>
+                            </ul>
+                            <p class="portfolio__time">Затрачено времени: 5 рабочих дней</p>
+                        </div>
+                        <a class="portfolio__link portfolio__gym" href="https://avganovat.github.io/Module01-Gym/" target="_blank"></a>
+                    </div>
+                </div>
+                <div class="portfolio__else">
+                    <p class="portfolio__else_text">Помимо создания сайтов и посадочных страниц я занимаюсь: настройкой&nbsp;контекстной рекламы в системах Яндекс.Директ и Google AdWords, а так же поисковым продвижением сайтов</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-grid__item">
+                        <img class="portfolio-grid__img" src="./images/money.svg" alt="">
+                        <div>
+                            <h4 class="portfolio-grid__title">Актуальные цены</h4>
+                            <p class="portfolio-grid__text">Ничего лишнего, без переплат, 100%&nbsp;отработка ваших денег</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid__item">
+                        <img class="portfolio-grid__img" src="./images/picture.svg" alt="">
+                        <div>
+                            <h4 class="portfolio-grid__title">Более 2-х лет опыта </h4>
+                            <p class="portfolio-grid__text">Это моя основная деятельность, создано&nbsp;более 150+ сайтов</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid__item">
+                        <img class="portfolio-grid__img" src="./images/clock.svg" alt="">
+                        <div>
+                            <h4 class="portfolio-grid__title">Оптимальные сроки</h4>
+                            <p class="portfolio-grid__text">Создание сайта любой сложности в&nbsp;самые сжатые сроки</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid__item">
+                        <img class="portfolio-grid__img" src="./images/tel.svg" alt="">
+                        <div>
+                            <h4 class="portfolio-grid__title">Всегда на связи</h4>
+                            <p class="portfolio-grid__text">Не теряюсь и не проматываю сроки.&nbsp;Подхожу ответственно</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid__item">
+                        <img class="portfolio-grid__img" src="./images/code.svg" alt="">
+                        <div>
+                            <h4 class="portfolio-grid__title">Чистый код</h4>
+                            <p class="portfolio-grid__text">HTML код без всего лишнего, плюс адаптив под все устройства</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-grid__item">
+                        <img class="portfolio-grid__img" src="./images/file.svg" alt="">
+                        <div>
+                            <h4 class="portfolio-grid__title">Поддержка сайта</h4>
+                            <p class="portfolio-grid__text">Быстро устраню любую проблему на&nbsp;вашем сайте</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-icons">
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__html" src="./images/html.svg" alt="">
+                            <span class="portfolio-icons__text">
+                                <span class="portfolio-icons__title">Html</span>
+                                Стандартизированный язык разметки документов для просмотра веб-страниц в браузере
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__css" src="./images/css.svg" alt="">
+                            <span class="portfolio-icons__text">
+                                <span class="portfolio-icons__title">Css</span>
+                                Формальный язык описания внешнего вида документа, написанного с использованием языка разметки
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__js" src="./images/js.svg" alt="">
+                            <span class="portfolio-icons__text">
+                                <span class="portfolio-icons__title">JavaScript ES6+</span>
+                                Язык программирования высокого уровня, использующийся для придания интерактивности веб-страницам
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__jquery" src="./images/jquery.svg" alt="">
+                            <span class="portfolio-icons__text">
+                                <span class="portfolio-icons__title">JQuery</span>
+                                Набор функций JavaScript, фокусирующийся на взаимодействии JavaScript и HTML
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__bootstrap" src="./images/bootstrap.svg" alt="">
+                            <span class="portfolio-icons__text">
+                                <span class="portfolio-icons__title">Bootstrap</span>
+                                Свободный набор инструментов для создания сайтов и веб-приложений
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__php" src="./images/php.svg" alt="">
+                            <span class="portfolio-icons__text portfolio-icons__tphp">
+                                <span class="portfolio-icons__title">PHP</span>
+                                Скриптовый язык общего назначения, интенсивно применяемый для разработки веб-приложений
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__vue" src="./images/vue.svg" alt="">
+                            <span class="portfolio-icons__text portfolio-icons__tvue">
+                                <span class="portfolio-icons__title">Vue.js</span>
+                                JavaScript-фреймворк с открытым исходным кодом для создания пользовательских интерфейсов
+                            </span>
+                        </div>
+                    </div>
+                    <div class="portfolio-icons__item">
+                        <div class="portfolio-icons__tooltip">
+                            <img class="portfolio-icons__img portfolio-icons__wordpress" src="./images/wordpress.svg" alt="">
+                            <span class="portfolio-icons__text">
+                                <span class="portfolio-icons__title">WordPress</span>
+                                Свободно распространяемая система управления содержимым сайта с открытым исходным кодом
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- PRICE -->
+
+    <section class="price">
+        <div class="container">
+            <div class="price__flex">
+                <h1 class="price__title">Тарифы</h1>
+                <p class="price__text">Представленные ниже цены зависят не&nbsp;только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ</p>
+            </div>
+            <div class="price-grid">
+                <div class="price-grid__item">
+                    <h3 class="price-grid__title">Разработка лэндинга&nbsp;или&nbsp;сайт визитки</h3>
+                    <p class="price-grid__text">Небольшой сайт состоящий из одной страницы</p>
+                    <a class="main__popup" href="#modal_bg" onclick="openModal()">Обсудить проект</a>
+                </div>
+                <div class="price-grid__item">
+                    <h5 class="price-grid__subtitle">Что входит</h5>
+                    <ul class="price-grid__list">
+                        <li>Сайт на CMS WordPress</li>
+                        <li>Одна посадочная страница</li>
+                        <li>От 7 дней</li>
+                    </ul>
+                    <p class="price-grid__cost">От 7 000 Р</p>
+                </div>
+            </div>
+            <div class="price-grid price-grid__2">
+                <div class="price-grid__item">
+                    <h3 class="price-grid__title">Разработка корпоративного&nbsp;сайта</h3>
+                    <p class="price-grid__text">Небольшой сайт с n-количеством страниц</p>
+                    <a class="main__popup" href="#modal_bg" onclick="openModal()">Обсудить проект</a>
+                </div>
+                <div class="price-grid__item">
+                    <h5 class="price-grid__subtitle">Что входит</h5>
+                    <ul class="price-grid__list">
+                        <li>Сайт на CMS WordPress</li>
+                        <li>От 2-10 страниц </li>
+                        <li>От 15 дней</li>
+                    </ul>
+                    <p class="price-grid__cost price-grid__none">От 10 000 Р</p>
+                </div>
+            </div>
+            <div class="price-grid price-grid__3">
+                <div class="price-grid__item">
+                    <h3 class="price-grid__title">Разработка интернет&nbsp;-&nbsp;магазина</h3>
+                    <p class="price-grid__text">Полноценный каталог вашей продукции</p>
+                    <a class="main__popup" href="#modal_bg" onclick="openModal()">Обсудить проект</a>
+                </div>
+                <div class="price-grid__item">
+                    <h5 class="price-grid__subtitle">Что входит</h5>
+                    <ul class="price-grid__list">
+                        <li>Сайт на CMS WordPress</li>
+                        <li>От 2-10 страниц, корзина, карточка товара</li>
+                        <li>От 20 дней</li>
+                    </ul>
+                    <p class="price-grid__cost">От 15 000 Р</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM -->
+
+    <section class="form">
+        <div class="container">
+            <div class="form__flex">
+                <h1 class="form__title">Расскажите о&nbsp;своем проекте</h1>
+                <p class="form__text">Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь с&nbsp;вами&nbsp;в ближайшее время</p>
+            </div>
+            <div class="form__flex form__flex-1">
+                <div class="main__social form__social">
+                    <a class="main__link main__vk" href="#/">Vk</a>
+                    <a class="main__link main__tg" href="https://t.me/TomaAvganova" target="_blank">Telegram</a>
+                    <a class="main__link" href="https://github.com/AvganovaT" target="_blank">GitHub</a>
+                </div>
+                <form class="form-blok">
+                    <label class="form-blok">Телефон или почта</label>
+                    <input class="form-blok__input" placeholder="Введите телефон">
+                    <label class="drop">
+                        <label class="form-blok">Выберите удобный способ связи</label>
+                        <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
+                        <span class="control">Telegram</span> <!-- Fake button -->
+                  
+                        <!-- Items -->
+                        <ul class="drop-items">
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">WhatsApp</a>
+                            </li>
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">Viber</a>
+                            </li>
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">Звонок на телефон</a>
+                            </li>
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">SMS сообщение</a>
+                            </li>
+                        </ul>
+                  
+                        <!-- Alternative to close dropdown with click out -->
+                        <label for="target-drop-example" class="overlay-close"></label>
+                  
+                      </label>
+                      <button class="form-blok__btn" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__head">
+                <nav class="header__navigation footer__navigation">
+                    <ul class="header__nav">
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Обо мне</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Этапы работ</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Цены</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#/">Обратная связь</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="contacts footer__contacts">
+                    <a class="contacts__link" href="tel:+79531928624">+7 953 192 86 24</a>
+                    <a class="contacts__link contacts__mail" href="mailto:avganovat@gmail.com">avganovat@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <p class="footer__copy">&copy; 2020, Все права защищены</p>
+                <p class="footer__copy">Сделано в рамках курса учебной платформы <a class="footer__author" href="https://annblok.ru" target="_blank">Frontend Blok</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+
+    <div class="modal__bg" id="modal__bg">
+        <div class="modal" id="modal">
+            <div class="modal__flex">
+                <h3 class="modal__title">Расскажите о&nbsp;своем проекте</h3>
+                <p class="modal__text">Заполните все поля, и я свяжусь с вами в ближайшее время</p>
+            </div>
+            <div class="modal__border">
+                <form class="form-blok">
+                    <label class="form-blok">Телефон или почта</label>
+                    <input class="form-blok__input modal__input" placeholder="Введите телефон">
+                    <label class="drop">
+                        <label class="form-blok">Выберите удобный способ связи</label>
+                        <input type="checkbox" id="target-drop-example"> <!-- Toggle Drop -->
+                        <span class="control modal__control">Telegram</span> <!-- Fake button -->
+                  
+                        <!-- Items -->
+                        <ul class="drop-items">
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">WhatsApp</a>
+                            </li>
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">Viber</a>
+                            </li>
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">Звонок на телефон</a>
+                            </li>
+                            <li class="item-drop">
+                                <a target="_blank" href="#/">SMS сообщение</a>
+                            </li>
+                        </ul>
+                  
+                        <!-- Alternative to close dropdown with click out -->
+                        <label for="target-drop-example" class="overlay-close"></label>
+                  
+                      </label>
+                      <button class="form-blok__btn modal__btn" type="submit">Отправить</button>
+                </form>
+                <button class="modal__close" onclick="closeModal()"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BURGER MENU -->
+
+    <div class="burger__bg" id="burger__bg">
+        <div class="burger__menu" id="burger">
+            <div class="burger__navigation ">
+                <ul class="burger__nav">
+                    <li class="burger__item">
+                        <a class="burger__link" href="#/">Обо мне</a>
+                    </li>
+                    <li class="burger__item">
+                        <a class="burger__link" href="#/">Портфолио</a>
+                    </li>
+                    <li class="burger__item">
+                        <a class="burger__link" href="#/">Этапы работ</a>
+                    </li>
+                    <li class="burger__item">
+                        <a class="burger__link" href="#/">Цены</a>
+                    </li>
+                    <li class="burger__item">
+                        <a class="burger__link" href="#/">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contacts burger__contacts">
+                <a class="contacts__link" href="tel:+79531928624">+7 953 192 86 24</a>
+                <a class="contacts__link contacts__mail" href="mailto:avganovat@gmail.com">avganovat@gmail.com</a>
+            </div>
+            <div class="main__social burger__social">
+                <a class="main__link main__vk" href="#/">Vk</a>
+                <a class="main__link main__tg" href="https://t.me/TomaAvganova" target="_blank">Telegram</a>
+                <a class="main__link" href="https://github.com/AvganovaT" target="_blank">GitHub</a>
+            </div>
+            
+            <button class="burger__close" onclick="closeBurger()"></button>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script>
+        // Modal
+
+        function openModal() {
+            document.getElementById("modal").style.display = "block";
+            document.getElementById("modal__bg").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("modal").style.display = "none";
+            document.getElementById("modal__bg").style.display = "none";
+        }
+
+        // Burger Menu
+
+        function openBurger() {
+            document.getElementById("burger").style.display = "block";
+            document.getElementById("burger__bg").style.display = "block";
+        }
+
+        function closeBurger() {
+            document.getElementById("burger").style.display = "none";
+            document.getElementById("burger__bg").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
