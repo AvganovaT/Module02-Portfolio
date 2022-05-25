@@ -16,19 +16,19 @@
                 <nav class="header__navigation">
                     <ul class="header__nav">
                         <li class="header__item">
-                            <a class="header__link" href="#/">Обо мне</a>
+                            <a class="header__link scroll__about" href="#about">Обо мне</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#/">Портфолио</a>
+                            <a class="header__link scroll__portfolio" href="#portfolio">Портфолио</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#/">Этапы работ</a>
+                            <a class="header__link scroll__steps" href="#steps">Этапы работ</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#/">Цены</a>
+                            <a class="header__link scroll__price" href="#price">Цены</a>
                         </li>
                         <li class="header__item">
-                            <a class="header__link" href="#/">Обратная связь</a>
+                            <a class="header__link scroll__form" href="#form">Обратная связь</a>
                         </li>
                     </ul>
                 </nav>
@@ -82,7 +82,7 @@
 
     <!-- ABOUT -->
 
-    <section class="about">
+    <section class="about"  id="about">
         <div class="container">
             <div class="about__flex">
                 <h1 class="about__title">Обо мне</h1>
@@ -111,7 +111,7 @@
 
     <!-- STEPS -->
 
-    <section class="steps">
+    <section class="steps" id="steps">
         <div class="container">
             <div class="steps__item">
                 <h3 class="steps__title"><span>01</span>Вы заказываете сайт</h3>
@@ -130,7 +130,7 @@
 
     <!-- PORTFOLIO -->
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h1 class="portfolio__title">Портфолио</h1>
         </div>
@@ -290,7 +290,7 @@
 
     <!-- PRICE -->
 
-    <section class="price">
+    <section class="price" id="price">
         <div class="container">
             <div class="price__flex">
                 <h1 class="price__title">Тарифы</h1>
@@ -349,7 +349,7 @@
 
     <!-- FORM -->
 
-    <section class="form">
+    <section class="form" id="form">
         <div class="container">
             <div class="form__flex">
                 <h1 class="form__title">Расскажите о&nbsp;своем проекте</h1>
@@ -537,6 +537,91 @@
         function closeBurger() {
             document.getElementById("burger").style.display = "none";
             document.getElementById("burger__bg").style.display = "none";
+        }
+
+        // Scroll About
+
+        const links = document.querySelectorAll(".scroll__about");
+
+        for (const link of links) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+         // Scroll Portfolio
+
+        const links1 = document.querySelectorAll(".scroll__portfolio");
+
+        for (const link of links1) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        // Scroll Steps
+
+        const links2 = document.querySelectorAll(".scroll__steps");
+
+        for (const link of links2) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        // Scroll Price
+
+        const links3 = document.querySelectorAll(".scroll__price");
+
+        for (const link of links3) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+
+        // Scroll Form
+
+        const links4 = document.querySelectorAll(".scroll__form");
+
+        for (const link of links4) {
+            link.addEventListener("click", clickHandler);
+        }
+
+        function clickHandler(e) {
+            e.preventDefault();
+            const href = this.getAttribute("href");
+
+            document.querySelector(href).scrollIntoView({
+                behavior: "smooth"
+            });
         }
     </script>
 
