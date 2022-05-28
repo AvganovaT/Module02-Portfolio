@@ -264,7 +264,7 @@ body {
             display: none;
         }
         &:hover {
-            color: $red;
+            text-decoration: underline;
         }
     }
     &__gh {
@@ -1308,7 +1308,7 @@ body {
     background-color: rgba($bg, .6);
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 300;
 }
 
 .modal {
