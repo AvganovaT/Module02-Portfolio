@@ -111,6 +111,7 @@ body {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
+        object-fit: cover;
         @media (max-width: $r_tab) {
             height: 27rem;
         }
@@ -1308,7 +1309,7 @@ body {
     background-color: rgba($bg, .6);
     position: fixed;
     top: 0;
-    z-index: 300;
+    z-index: 100;
 }
 
 .modal {
@@ -1323,7 +1324,7 @@ body {
     top: 20%;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 200;
     @media (max-width: $r_tab) {
         max-width: 47rem; 
         max-height: 63rem; 
