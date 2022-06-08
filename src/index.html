@@ -451,16 +451,16 @@
                         <!-- Items -->
                         <ul class="drop-items">
                             <li class="item-drop">
-                                <a target="_blank" href="https://api.whatsapp.com/send?phone=79531928624">WhatsApp</a>
+                                <a target="_blank" href="#/">WhatsApp</a>
                             </li>
                             <li class="item-drop">
-                                <a target="_blank" href="https://vk.com/toma_avganova">VK</a>
+                                <a target="_blank" href="#/">VK</a>
                             </li>
                             <li class="item-drop">
-                                <a href="tel:+79531928624">Звонок на телефон</a>
+                                <a href="#/">Звонок на телефон</a>
                             </li>
                             <li class="item-drop">
-                                <a href="sms:+79531928624">SMS сообщение</a>
+                                <a href="#/">SMS сообщение</a>
                             </li>
                         </ul>
                   
@@ -520,11 +520,13 @@
         function openModal() {
             document.getElementById("modal").style.display = "block";
             document.getElementById("modal__bg").style.display = "block";
+            document.getElementsByTagName("body")[0].style.overflow="hidden";
         }
 
         function closeModal() {
             document.getElementById("modal").style.display = "none";
             document.getElementById("modal__bg").style.display = "none";
+            document.getElementsByTagName("body")[0].style.overflow="visible";
         }
 
         // Burger Menu
