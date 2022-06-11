@@ -61,7 +61,7 @@ body {
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 100;
+    z-index: 4;
     &__burger {
         display: none;
         justify-content: space-between;
@@ -373,12 +373,17 @@ body {
         margin-top: 8rem;
     }
     &__flex {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         padding-bottom: 3rem;
         border-bottom: 2px solid #f3f2f0;
+        @media (max-width: $r_tab_900) {
+            gap: 2rem;
+        }
         @media (max-width: $r_tab) {
             display: grid;
+            grid-template-columns: none;
+            gap: 0;
         }
     }
     &__title {
@@ -743,27 +748,25 @@ body {
 
         position: absolute;
         top: 113%;
-        left: 10%;
-        z-index: 10;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 3;
         transition: .2s;
         @media (max-width: $r_tab) {
             width: 16rem;
-            left: 14%;
         }
         @media (max-width: $r_mob_600) {
             width: 14.5rem;
-            left: 4%;
         }
         @media (max-width: $r_mob_500) {
             width: 11.5rem;
-            left: -4%;
         }
         @media (max-width: $r_mob_400) {
             width: 9rem;
             height: 1rem;
             overflow: hidden;
             padding: 1rem;
-            left: -3%;
         }
     }
     &__title {
@@ -1137,7 +1140,7 @@ body {
         border: none;
         outline: none;
         @media (max-width: $r_mob_400) {
-            width: 44.5rem;
+            width: 100%;
             padding: 2.4rem 2rem 2.3rem;
         }
     }
@@ -1175,14 +1178,10 @@ body {
             padding: .6rem 0;
         }
         ~.control {       
-            z-index: 99;
+            z-index: 2;
             &:after {
                 transform: rotate(180deg);
             }
-        }
-        ~.overlay-close {
-            transform: none;
-            pointer-events: initial;
         }
       }
     }
@@ -1240,7 +1239,7 @@ body {
         background-color: $dark;
         overflow: hidden;
         transition: all .3s ease;   
-        z-index: 99;
+        z-index: 1;
         .item-drop {
             list-style:none;
             a {        
@@ -1334,7 +1333,7 @@ body {
     background-color: rgba($bg, .6);
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 5;
 }
 
 .modal {
@@ -1349,7 +1348,7 @@ body {
     top: 20%;
     left: 0;
     right: 0;
-    z-index: 200;
+    z-index: 4;
     @media (max-width: $r_tab) {
         max-width: 47rem; 
         max-height: 63rem; 
@@ -1436,7 +1435,7 @@ body {
         background-color: rgba($bg, .6);
         position: fixed;
         top: 0;
-        z-index: 101;
+        z-index: 5;
     }
     &__menu {
         width: 100vw;
@@ -1498,12 +1497,12 @@ body {
         }
     }
     &__link {
-        font-size: 4rem;
+        font-size: 2.5rem;
         line-height: 1.5;
         text-decoration: none;
         color: $grey;
         @media (max-width: $r_mob_400) {
-            font-size: 3.7rem;
+            font-size: 2rem;
         }
     }
     &__close {
