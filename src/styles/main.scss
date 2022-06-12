@@ -269,7 +269,9 @@ body {
             display: none;
         }
         &:hover {
-            text-decoration: underline;
+            // text-decoration: underline;
+            color: $red;
+            text-shadow: 2px 0 0 $white, -2px 0 0 $white, 0 2px 0 $white, 0 -2px 0 $white, 1px 1px $white, -1px -1px 0 $white, 1px -1px 0 $white, -1px 1px 0 $white;
         }
     }
     &__gh {
@@ -359,7 +361,7 @@ body {
             height: 24px;
             position: absolute;
             top: -5px;
-            left: -9px;
+            left: -9%;
         }
     }
 }
@@ -1210,8 +1212,7 @@ body {
             transition: transform .3s ease;
             position: absolute;
             right: 2.3rem;
-            bottom: 0;
-            bottom: 2rem;
+            bottom: 2.3rem;
         }
         @media (max-width: $r_mob_400) {
             max-width: 44.5rem;
